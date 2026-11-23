@@ -1,0 +1,59 @@
+sample_id,batch,geo_sample_name,tumour_fraction,ichor_ploidy,reference_noncancer,diagnosis,true_class
+EE86217,Snyder2016,BH01,0.01855,2.039,True,Healthy,
+EE86226,Snyder2016,IC02,0.1084,2.75,False,Ovarian cancer,ovary
+EE86230,Snyder2016,IC06,0.08685,2.194,False,Lung cancer,lung
+EE86233,Snyder2016,IC10,0.06114,2.402,False,Lung cancer,lung
+EE86238,Snyder2016,IC15,0.5906,2.477,False,Lung cancer,lung
+EE86240,Snyder2016,IC17,0.2224,2.147,False,Liver cancer,liver
+EE86243,Snyder2016,IC20,0.2466,2.61,False,Lung cancer,lung
+EE86244,Snyder2016,IC21,0.1359,2.511,False,Pancreatic cancer,pancreas
+EE86246,Snyder2016,IC23,0.235,1.826,False,Liver cancer,liver
+EE86247,Snyder2016,IC24,0.1315,2.294,False,Pancreatic cancer,pancreas
+EE86253,Snyder2016,IC30,0.1232,2.352,False,Esophageal cancer,
+EE86256,Snyder2016,IC34,0.06336,2.103,False,Breast cancer,breast
+EE86257,Snyder2016,IC35,0.2411,1.613,False,Breast cancer,breast
+EE86259,Snyder2016,IC37,0.2312,2.706,False,Colorectal cancer,colorectal
+EE86267,Snyder2016,IC46,0.08294,2.145,False,Breast cancer,breast
+EE86268,Snyder2016,IC47,0.06692,1.945,False,Pancreatic cancer,pancreas
+EE86273,Snyder2016,IC52,0.2888,1.819,False,Pancreatic cancer,pancreas
+EE86275,Snyder2016,IH02,0.003243,1.73,True,Healthy,
+EE86218,Snyder2016,IA01,0.009472,2.227,True,Inflammatory bowel disease,
+EE86219,Snyder2016,IA02,0.005474,1.822,True,Inflammatory bowel disease,
+EE86220,Snyder2016,IA03,0.004592,1.833,True,Inflammatory bowel disease,
+EE86221,Snyder2016,IA04,0.005766,1.912,True,Inflammatory bowel disease,
+EE86222,Snyder2016,IA05,0.003564,2.391,True,Systemic lupus erythematosus,
+EE86223,Snyder2016,IA06,0.003684,2.3,True,Systemic lupus erythematosus,
+EE86224,Snyder2016,IA07,0.009941,2.522,True,Systemic lupus erythematosus,
+EE86225,Snyder2016,IA08,0.003843,2.475,True,Systemic lupus erythematosus,
+EE86227,Snyder2016,IC03,0.008915,2.215,False,Skin cancer,
+EE86228,Snyder2016,IC04,0.03298,2.203,False,Breast cancer,breast
+EE86229,Snyder2016,IC05,0.003482,1.519,False,Lung cancer,lung
+EE86231,Snyder2016,IC08,0.009017,2.344,False,Uterine cancer,
+EE86232,Snyder2016,IC09,0.01391,2.595,False,Ovarian cancer,ovary
+EE86234,Snyder2016,IC11,0.004089,2.027,False,Colorectal cancer,colorectal
+EE86235,Snyder2016,IC12,0.004388,2.053,False,Breast cancer,breast
+EE86236,Snyder2016,IC13,0.005418,1.722,False,Prostate cancer,prostate
+EE86237,Snyder2016,IC14,0.01057,2.138,False,Head and neck cancer,
+EE86239,Snyder2016,IC16,0.004115,2.133,False,Bladder cancer,
+EE86241,Snyder2016,IC18,0.007571,2.338,False,Kidney cancer,
+EE86242,Snyder2016,IC19,0.01161,2.203,False,Testicular cancer,
+EE86245,Snyder2016,IC22,0.02055,2.781,False,Lung cancer,lung
+EE86248,Snyder2016,IC25,0.003408,1.895,False,Pancreatic cancer,pancreas
+EE86249,Snyder2016,IC26,0.005155,1.443,False,Prostate cancer,prostate
+EE86250,Snyder2016,IC27,0.005194,2.129,False,Uterine cancer,
+EE86251,Snyder2016,IC28,0.002353,1.592,False,Lung cancer,lung
+EE86252,Snyder2016,IC29,0.004552,2.117,False,Head and neck cancer,
+EE86254,Snyder2016,IC32,0.01338,2.737,False,Lung cancer,lung
+EE86255,Snyder2016,IC33,0.006052,1.834,False,Colorectal cancer,colorectal
+EE86258,Snyder2016,IC36,0.00319,1.717,False,Liver cancer,liver
+EE86260,Snyder2016,IC38,0.0112,2.367,False,Bladder cancer,
+EE86261,Snyder2016,IC39,0.01003,2.148,False,Kidney cancer,
+EE86262,Snyder2016,IC40,0.004889,2.251,False,Prostate cancer,prostate
+EE86263,Snyder2016,IC41,0.009077,2.221,False,Testicular cancer,
+EE86264,Snyder2016,IC42,0.005216,2.017,False,Lung cancer,lung
+EE86265,Snyder2016,IC43,0.00368,1.785,False,Skin cancer,
+EE86266,Snyder2016,IC44,0.00777,2.474,False,Esophageal cancer,
+EE86269,Snyder2016,IC48,0.01791,2.242,False,Breast cancer,breast
+EE86270,Snyder2016,IC49,0.003997,2.413,False,Pancreatic cancer,pancreas
+EE86271,Snyder2016,IC50,0.009832,2.29,False,Pancreatic cancer,pancreas
+EE86272,Snyder2016,IC51,0.003406,2.115,False,Pancreatic cancer,pancreas

@@ -1,0 +1,38 @@
+# Conda environment for scFragTrace. Versions are those of the environment in which the release was checked
+# (Python 3.13); the results of the paper were obtained with the same major versions. Install: conda env create -f environment.yml
+name: scfragtrace
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.13
+  - numpy=2.5.3
+  - pandas=3.0.5
+  - scipy=1.18.1
+  - scikit-learn=1.9.1
+  - pytorch=2.15.0          # CPU build is sufficient
+  - joblib=1.6.0
+  - h5py=3.16.0
+  - matplotlib=3.11.2
+  - pillow=12.3.0
+  - pypdf=6.17.0
+  - umap-learn=0.6.0
+  - adjusttext=1.4.0
+  - colorcet=3.2.1
+  - pyyaml=6.0.3
+  - pytest=9.2.0
+  # single-cell and genomics file formats
+  - anndata=0.13.4
+  - scanpy=1.12.5
+  - pysam=0.24.1
+  - pybigwig=0.3.29
+  - xgboost                 # version not recorded
+  # external programs of the fragment file -> feature steps (model/docs/INPUTS.md)
+  - r-base
+  - tabix
+  - ucsc-liftover
+  - pip
+  - pip:
+      - omicverse           # version not recorded
+      # ichorCNA v0.3.2 (R, GitHub broadinstitute/ichorCNA) and FinaleToolkit (DELFI) are installed separately;
+      # settings in model/docs/INPUTS.md.

@@ -1,0 +1,216 @@
+{
+ "name": "cristiano_only",
+ "description": "Design of the paper: every trained component is fitted on the Cristiano cohort (discovery cohort) only. Tissue of origin in new cohorts is the label-free prior (47 features, no trained parameter); the residual graph network and the global classifier are trained on the 243 Cristiano cancers with a class label (stratified 20% validation split) and are used in full mode. Cancer score: five components with equal, pre-specified weights; module LR, detection graph network, global LR and DELFI coverage LR trained on the 539 Cristiano genomes.",
+ "package_version": "1.4.0",
+ "created": "2026-11-22",
+ "classes": [
+  "breast",
+  "colorectal",
+  "gastric",
+  "lung",
+  "ovary",
+  "pancreas",
+  "liver",
+  "prostate"
+ ],
+ "reference_dir": "../reference",
+ "architecture": {
+  "node_features": 3,
+  "d": 32,
+  "heads": 4,
+  "n_cohorts_adversary": 1,
+  "n_modules": 764
+ },
+ "files": {
+  "det_delfi_lr.npz": "2df7ee53ed4da735477aad24a73b28c7f92da6a493fcbc0698566a56eb5dd293",
+  "det_global_lr.npz": "147d76ac084f43b26ab4375c625dede9367202260899ca833699066a14acc7fe",
+  "det_gnn_seed0.pt": "5425d0decc2c3c120aeccdeb640d43acd637ba624b51a33a81550863a454655a",
+  "det_gnn_seed1.pt": "64b8e9621f34dc74d177065bda14f28bfc2e37c224d3b237d43b76339d09a7c0",
+  "det_gnn_seed2.pt": "f36a4f149bc961f1802f5099045fdd92e1cd49cb9a38105bdc85f988aec6b1e7",
+  "det_module_lr.npz": "e6043be19a56091e77ecc0a43d0042d4c670475ee3f366ac429fae69362d6a6f",
+  "global_lr.npz": "77d1ed864f1bac3028dbd27ae07c4e47966f0ca4e0eb83ae130631f92d4c3ce5",
+  "too_gnn_seed0.pt": "97c60845a07283a3a237e011e61d08e1c0783037b57c4af8831461069e2d0810",
+  "too_gnn_seed1.pt": "30be30912f2a0814fdb07d425ead6fba1e4f18e6ee4a80adb1137df7eee5af10",
+  "too_gnn_seed2.pt": "ffa497ec18fb9123e90c246b408a9145630e1f1d0bdeb758e836623f77621bd3",
+  "too_node_standardisation.npz": "83ab54b3818de08b7adf4b0596fc32eac0d2af71ec079534475fd8130cee00a2",
+  "../reference/arm_bins.tsv": "26fa0d3b3c4fc52a559ddd1a51ef490c2b3e167ca11e66096d4f66308e132dad",
+  "../reference/footprint_pooled_reference.npz": "d7d75791d8113dd2dd90c1688f887178ee0987889223b0a9c4b2e0ea90a6703e",
+  "../reference/footprint_sites.npz": "57688535aaa85d11912bf10e0e799988befdd747af8c7267c014e1b01bbb4feb",
+  "../reference/module_graph.npz": "e5d54950b5888d5bc8588f63a1776d6e190ee08043da48fa6d7a1ba31acb2319",
+  "../reference/module_sites.npz": "42952a299826a4cb4106d891d33837610fb9b59f1fa52b69b2ec6653a435609c",
+  "../reference/tcga_arm_templates.csv": "546c21c58034f555050012711c01adb0411cbcf800fb121f0fefc0854075c258"
+ },
+ "training": {
+  "tissue_of_origin": {
+   "train_cohorts": [
+    "Cristiano"
+   ],
+   "unlabelled_cohorts": [],
+   "n_train": {
+    "Cristiano": {
+     "breast": 54,
+     "colorectal": 27,
+     "gastric": 27,
+     "lung": 48,
+     "ovary": 28,
+     "pancreas": 59
+    }
+   },
+   "n_unlabelled": 0,
+   "cohort_index": {
+    "Cristiano": 0
+   },
+   "seeds": [
+    {
+     "seed": 0,
+     "val_cohort": "stratified 20% of Cristiano",
+     "n_fit": 194,
+     "n_val": 49,
+     "epochs": 21,
+     "val_balanced_accuracy": {
+      "0": 0.3917,
+      "0.25": 0.3917,
+      "0.5": 0.4081,
+      "1.0": 0.4232
+     },
+     "chosen_lambda": 1.0,
+     "seconds": 519
+    },
+    {
+     "seed": 1,
+     "val_cohort": "stratified 20% of Cristiano",
+     "n_fit": 194,
+     "n_val": 49,
+     "epochs": 24,
+     "val_balanced_accuracy": {
+      "0": 0.1957,
+      "0.25": 0.2124,
+      "0.5": 0.2596,
+      "1.0": 0.2747
+     },
+     "chosen_lambda": 1.0,
+     "seconds": 602
+    },
+    {
+     "seed": 2,
+     "val_cohort": "stratified 20% of Cristiano",
+     "n_fit": 194,
+     "n_val": 49,
+     "epochs": 34,
+     "val_balanced_accuracy": {
+      "0": 0.3288,
+      "0.25": 0.2955,
+      "0.5": 0.3093,
+      "1.0": 0.3566
+     },
+     "chosen_lambda": 1.0,
+     "seconds": 829
+    }
+   ]
+  },
+  "detection": {
+   "train_cohorts": [
+    "Cristiano"
+   ],
+   "n_train": {
+    "Cristiano": {
+     "non_cancer": 264,
+     "cancer": 275
+    }
+   },
+   "seeds": [
+    {
+     "seed": 0,
+     "n_fit": 431,
+     "n_val": 108,
+     "epochs": 17,
+     "seconds": 436
+    },
+    {
+     "seed": 1,
+     "n_fit": 431,
+     "n_val": 108,
+     "epochs": 20,
+     "seconds": 534
+    },
+    {
+     "seed": 2,
+     "n_fit": 431,
+     "n_val": 108,
+     "epochs": 17,
+     "seconds": 434
+    }
+   ],
+   "global_lr": {
+    "C": 0.3,
+    "n_features": 1005
+   },
+   "delfi_lr": {
+    "C": 1.0,
+    "cv_auroc": {
+     "0.001": 0.8341,
+     "0.01": 0.9168,
+     "0.1": 0.941,
+     "1.0": 0.9412
+    },
+    "n_features": 1063
+   }
+  }
+ },
+ "tissue_of_origin": {
+  "gnn_weights": [
+   "too_gnn_seed0.pt",
+   "too_gnn_seed1.pt",
+   "too_gnn_seed2.pt"
+  ],
+  "node_standardisation": "too_node_standardisation.npz",
+  "lambdas": [
+   1.0,
+   1.0,
+   1.0
+  ],
+  "default_mode": "label_free",
+  "validation_split": "stratified_20pct",
+  "mode_note": "label_free: class score = label-free prior (47 features; lambda = 0, w = 0), the setting of the paper for new cohorts. full: prior + mean lambda * graph-network residual + w * log p_global.",
+  "recipe": "wdat: TFx-weighted CE + 0.5 KL to prior + 0.3 batch adversary (GRL) + distillation towards the prior"
+ },
+ "global_lr": {
+  "file": "global_lr.npz",
+  "train_cohorts": [
+   "Cristiano"
+  ],
+  "n_train": 243,
+  "C": 0.3,
+  "reference_mean_from": "non-cancer samples of Cristiano",
+  "n_features": 1005
+ },
+ "fusion": {
+  "w_global": 0.0,
+  "note": "full mode: score = final + w_global * log p_global; w = 0 in new cohorts"
+ },
+ "detection": {
+  "gnn_weights": [
+   "det_gnn_seed0.pt",
+   "det_gnn_seed1.pt",
+   "det_gnn_seed2.pt"
+  ],
+  "module_lr": "det_module_lr.npz",
+  "weights": {
+   "tf": 1.0,
+   "module_lr": 1.0,
+   "gnn": 1.0,
+   "global_lr": 1.0,
+   "delfi_lr": 1.0
+  },
+  "note": "cancer score = sum_m weight_m * z(component m), z within batch over all its samples (no labels); components: tf (ichorCNA tumour fraction, TFx), module_lr, gnn, global_lr, delfi_lr; a component whose input is absent is left out",
+  "global_lr": "det_global_lr.npz",
+  "delfi_lr": "det_delfi_lr.npz"
+ },
+ "software": {
+  "python_package": "1.4.0",
+  "numpy": "2.5.3",
+  "torch": "2.15.0+cu132",
+  "scikit_learn": "1.9.1",
+  "pandas": "3.0.5"
+ }
+}

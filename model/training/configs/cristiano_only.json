@@ -1,0 +1,14 @@
+{
+ "name": "cristiano_only",
+ "description": "Design of the paper: every trained component is fitted on the Cristiano cohort (discovery cohort) only. Tissue of origin in new cohorts is the label-free prior (47 features, no trained parameter); the residual graph network and the global classifier are trained on the 243 Cristiano cancers with a class label (stratified 20% validation split) and are used in full mode. Cancer score: five components with equal, pre-specified weights; module LR, detection graph network, global LR and DELFI coverage LR trained on the 539 Cristiano genomes.",
+ "too_train_cohorts": ["Cristiano"],
+ "too_val_order": ["Cristiano"],
+ "too_val_split": "stratified_20pct",
+ "too_unlabelled_cohorts": [],
+ "too_default_mode": "label_free",
+ "det_train_cohorts": ["Cristiano"],
+ "det_weights": {"tf": 1.0, "module_lr": 1.0, "gnn": 1.0, "global_lr": 1.0, "delfi_lr": 1.0},
+ "w_global": 0.0,
+ "global_reference_batch": "Cristiano",
+ "seeds": [0, 1, 2]
+}

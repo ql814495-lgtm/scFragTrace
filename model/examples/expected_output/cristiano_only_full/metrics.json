@@ -1,0 +1,18 @@
+{
+ "n_samples": 58,
+ "n_cancer": 48,
+ "n_noncancer": 10,
+ "n_tissue_of_origin_evaluable": 34,
+ "tissue_of_origin_balanced_accuracy": 0.4126984126984127,
+ "tissue_of_origin_top1": 0.4411764705882353,
+ "tissue_of_origin_top2": 0.5588235294117647,
+ "n_tfx_ge_5pct": 15,
+ "tissue_of_origin_balanced_accuracy_tfx_ge_5pct": 0.7222222222222222,
+ "detection_auroc": 0.7416666666666666,
+ "mean_evidence_share": {
+  "footprint": 0.3373281309920816,
+  "copy_number": 0.4782095126318329,
+  "gnn": 0.18446235637608563,
+  "global": 0.0
+ }
+}

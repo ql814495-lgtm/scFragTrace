@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article and the archived software release."
+title: "scFragTrace: single-cell chromatin footprints for cancer detection and tissue-of-origin inference from low-coverage cell-free DNA"
+version: 1.4.0
+date-released: "2026-11-22"
+license: MIT
+type: software
+authors:
+  - name: "The scFragTrace authors"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24270689"
+    description: "Zenodo archive of the software"
+repository-code: "https://github.com/ql814495-lgtm/scFragTrace"
+keywords:
+  - cell-free DNA
+  - fragmentomics
+  - liquid biopsy
+  - single-cell ATAC-seq
+  - tissue of origin
+  - graph neural network
+preferred-citation:
+  type: article
+  title: "scFragTrace: single-cell chromatin footprints enable cancer detection and tissue-of-origin inference from low-coverage cell-free DNA"
+  authors:
+    - name: "The scFragTrace authors"
+  year: 2026
+  notes: "Manuscript; journal reference and DOI to be added on publication."

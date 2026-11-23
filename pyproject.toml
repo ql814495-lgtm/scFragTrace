@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scfragtrace"
+version = "1.4.0"
+description = "Cancer detection and tissue of origin from cfDNA fragments with single-cell ATAC lineage footprints, copy-number templates and a lineage-constrained graph network"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "torch"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+scfragtrace = "scfragtrace.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "model"}
+packages = ["scfragtrace"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

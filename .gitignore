@@ -1,0 +1,6 @@
+# Generated results and caches
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+model/examples/output/

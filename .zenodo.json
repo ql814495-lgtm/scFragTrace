@@ -1,0 +1,28 @@
+{
+  "title": "scFragTrace: single-cell chromatin footprints for cancer detection and tissue-of-origin inference from low-coverage cell-free DNA (code)",
+  "upload_type": "software",
+  "version": "1.4.0",
+  "description": "Code accompanying the scFragTrace article. It derives cfDNA fragment features at single-cell ATAC-seq lineage sites, builds a label-free tissue-of-origin model from lineage footprints and copy-number templates (47 features, free of trained parameters), and trains a lineage-constrained graph network and a five-component cancer score on a single discovery cohort (Cristiano et al. 2019). Includes the trained parameters, a worked example on open-access samples (Snyder et al. 2016, GEO GSE71378), and the single-cell reference site sets and co-accessibility graph.",
+  "creators": [
+    {
+      "name": "The scFragTrace authors"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "cell-free DNA",
+    "fragmentomics",
+    "liquid biopsy",
+    "single-cell ATAC-seq",
+    "tissue of origin",
+    "graph neural network"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ql814495-lgtm/scFragTrace",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
